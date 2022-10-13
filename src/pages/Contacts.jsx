@@ -5,7 +5,7 @@ export function Contacts() {
 
   return (
     <>
-      <h1>Hello Contacts</h1>;
+      <h1>Hello Contacts</h1>
       <button className="btn" onClick={() => navigate(-1)}>
         назад
       </button>

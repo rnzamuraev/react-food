@@ -1,8 +1,8 @@
 import { API_URL } from "./config";
 
-const getByCategory = async (name) => {
+const getByCategory = async (catName) => {
   const response = await fetch(
-    API_URL + "filter.php?c=" + name
+    API_URL + "filter.php?c=" + catName
   );
   return await response.json();
 };
@@ -22,10 +22,7 @@ const geMealByName = async (name) => {
 };
 
 const getAllCategories = async () => {
-  const response = await fetch(
-    API_URL + "categories.php"
-    // "www.themealdb.com/api/json/v1/1/categories.php"
-  );
+  const response = await fetch(API_URL + "categories.php");
   return await response.json();
 };
 

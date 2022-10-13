@@ -13,6 +13,7 @@ import { Home } from "./pages/HomePage";
 import { About } from "./pages/About";
 import { Contacts } from "./pages/Contacts";
 import { NotFound } from "./pages/NotFound";
+import { Category } from "./pages/Category";
 
 export default function App() {
   return (
@@ -23,8 +24,12 @@ export default function App() {
           <Routes>
             <Route
               exact
-              path="/"
+              path="/react-food-project"
               element={<Home />}
+            ></Route>
+            <Route
+              path="/category/:name"
+              element={<Category />}
             ></Route>
             <Route path="/about" element={<About />} />
             <Route

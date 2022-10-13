@@ -7,7 +7,7 @@ export function Header() {
         <div className="nav-wrapper container">
           <Link
             // href="/react-food-project"
-            to="/"
+            to="/react-food-project"
             className="brand-logo"
           >
             React Food Project

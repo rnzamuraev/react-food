@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 export function CategoriItem(props) {
   const {
-    idCategory,
     strCategory,
     strCategoryThumb: images,
     strCategoryDescription: descr,
@@ -19,7 +18,7 @@ export function CategoriItem(props) {
       </div>
       <div className="card-action">
         <Link
-          to={`/category/${idCategory}`}
+          to={`/category/${strCategory}`}
           className="btn"
         >
           Whath category

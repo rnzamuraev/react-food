@@ -29,7 +29,7 @@ nav .nav-wrapper i {
 }
 
 .content {
-  min-height: calc(100vh - 64px);
+  min-height: calc(100vh - 70px - 64px);
   /* padding-top: 100px; */
 }
 .list {
