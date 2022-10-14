@@ -14,6 +14,7 @@ import { About } from "./pages/About";
 import { Contacts } from "./pages/Contacts";
 import { NotFound } from "./pages/NotFound";
 import { Category } from "./pages/Category";
+import { Recipe } from "./pages/Recipe";
 
 export default function App() {
   return (
@@ -30,6 +31,10 @@ export default function App() {
             <Route
               path="/category/:name"
               element={<Category />}
+            ></Route>
+            <Route
+              path="/meal/:name"
+              element={<Recipe />}
             ></Route>
             <Route path="/about" element={<About />} />
             <Route

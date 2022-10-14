@@ -17,7 +17,10 @@ export function Category() {
 
   return (
     <>
-      <button className="btn" onClick={() => navigate(-1)}>
+      <button
+        className="btn btn-mr"
+        onClick={() => navigate(-1)}
+      >
         назад
       </button>
       {!meals.length ? (

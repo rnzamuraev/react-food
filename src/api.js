@@ -14,7 +14,7 @@ const getMealById = async (mealId) => {
   return await response.json();
 };
 
-const geMealByName = async (name) => {
+const getMealByName = async (name) => {
   const response = await fetch(
     API_URL + "search.php?s=" + name
   );
@@ -29,6 +29,6 @@ const getAllCategories = async () => {
 export {
   getByCategory,
   getMealById,
-  geMealByName,
+  getMealByName,
   getAllCategories,
 };
